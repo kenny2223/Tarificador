@@ -57,12 +57,7 @@ app.use("/ChanSpy",ChanSpy)
 
 app.use(express.static('public'));
 
-<<<<<<< HEAD
 
 server.listen(PORT, () =>{
     console.log(`Servidor iniciado en el puerto: ${PORT}`);
-=======
-server.listen(PORT, () =>{
-  console.log(`Servidor iniciado en el puerto: ${PORT}`);
->>>>>>> 22b6957 (chanspy)
 })
