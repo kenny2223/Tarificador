@@ -7,6 +7,7 @@ yum install -y nodejs # se instala node
 
 # se agrega el contexto Chanspy
 cat << EOF >> /etc/asterisk/extensions_override_issabelpbx.conf  
+
 [app-chanspy]
 include => app-chanspy-custom
 exten => 555,1,NoOp(ChanSpy)
@@ -17,6 +18,7 @@ EOF
 
 #se crea credenciales para ami 
 cat << EOF >> /etc/asterisk/manager_custom.conf
+
 [sencom]
 secret = 31994
 deny=0.0.0.0/0.0.0.0
