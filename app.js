@@ -7,6 +7,8 @@ const {ami}= require('./asterisk');
 
 const ChanSpy = require("./router/ChanSpy")
 const app = express();
+const PORT = 2223
+
 app.use(history());
 app.use(cors());
 
@@ -52,6 +54,7 @@ app.use("/ChanSpy",ChanSpy)
 
 app.use(express.static('public'));
 
-server.listen(9000, () =>{
-    console.log('Servidor iniciado en el puerto: ');
+
+server.listen(PORT, () =>{
+    console.log(`Servidor iniciado en el puerto: ${PORT}`);
 })
