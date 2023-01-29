@@ -38,8 +38,8 @@ wget https://github.com/kenny2223/ChanSpy/blob/main/Chanspy.tar.gz?raw=true -O C
 tar xzvf Chanspy.tar.gz
 cp -r ./Chanspy/* /usr/local/Chanspy
 
-rm -f  Chanspy.tar.gz
-rm -f  ChanSpy
+rm -rf  Chanspy.tar.gz
+rm -rf  ChanSpy
 
 
 cd /usr/local/Chanspy
