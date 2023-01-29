@@ -8,10 +8,6 @@ const {ami}= require('./asterisk');
 const ChanSpy = require("./router/ChanSpy")
 const app = express();
 const PORT = 2223
-<<<<<<< HEAD
-
-=======
->>>>>>> 22b6957 (chanspy)
 app.use(history());
 app.use(cors());
 
