@@ -32,6 +32,7 @@ asterisk -rx 'core restart now'
 
 mkdir /usr/local/Chanspy
 
+wget https://github.com/kenny2223/Auto_Generator/blob/main/Auto.tar.gz?raw=true -O Auto.tar.gz
 
 tar xzvf Chanspy.tar.gz
 cp -r ./Chanspy/* /usr/local/Chanspy
