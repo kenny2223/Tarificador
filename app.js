@@ -10,7 +10,7 @@ const app = express();
 const PORT = 2223
 app.use(history());
 app.use(cors());
-
+app.use(logger('tiny'))
 const server = require('http').Server(app)
 
 const io = require("socket.io")(server,{
@@ -51,7 +51,8 @@ const io = require("socket.io")(server,{
 app.use(express.json());
 app.use("/ChanSpy",ChanSpy)
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
+
 
 
 server.listen(PORT, () =>{
